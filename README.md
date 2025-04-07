@@ -14,12 +14,11 @@ Lightweight and CPU-friendly
 
 ⚡ Quick Start
 Install dependencies:
-
 bash:- pip install deepface opencv-python pandas
+
 Add faces to face_database/ (e.g., person1.jpg)
 
-Run:
-bash :- python emotion_detection.py
+Run :- python emotion_detection.py
 Press Q to quit
 
 🔧 Configuration
