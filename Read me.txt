@@ -1,0 +1,25 @@
+# Facial Expression Detection System Requirements
+# Save this as requirements.txt and run: pip install -r requirements.txt
+
+# Core Python Packages
+deepface==0.0.79
+opencv-python==4.8.0
+pandas==2.0.3
+numpy==1.24.3
+tensorflow==2.15.0  # or tensorflow-intel for better CPU performance
+
+# Linux-specific dependencies (manual installation required)
+# sudo apt-get install python3-dev build-essential cmake libgtk-3-dev
+
+# Optional for GPU support (NVIDIA only)
+# tensorflow-gpu==2.15.0
+
+# System Requirements
+# OS: Windows 10/11 (64-bit) or Linux (Ubuntu/Debian recommended)
+# RAM: 8GB+ (16GB recommended)
+# Webcam: Built-in or USB
+# Disk Space: 2GB+ free space
+
+# Setup Instructions:
+# 1. Create face_database folder and add reference images
+# 2. Run: python emotion_detection.py

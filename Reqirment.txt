@@ -1,0 +1,45 @@
+# Facial Expression Detection System - Complete Requirements
+# Save as requirements.txt and run: pip install -r requirements.txt
+
+# === CORE DEPENDENCIES ===
+deepface==0.0.79             # Face analysis
+opencv-python==4.8.0         # Camera/Image processing
+pandas==2.0.3                # Data logging
+numpy==1.24.3                # Numerical operations
+tensorflow-intel==2.15.0     # Optimized CPU version (recommended over tensorflow)
+protobuf==3.20.3            # Required for TensorFlow compatibility
+
+# === OPTIONAL (RECOMMENDED) ===
+fastapi==0.95.2             # For web API (if needed)
+uvicorn==0.22.0             # ASGI server
+python-multipart==0.0.6     # File upload support
+
+# === TROUBLESHOOTING PACKAGES ===
+onnxruntime==1.15.1         # Alternative backend
+keras==2.15.0               # Fixed version for stability
+h5py==3.9.0                 # Required for model loading
+
+# === LINUX SYSTEM DEPS (Run separately) ===
+# sudo apt-get install -y \
+#   python3-dev \
+#   build-essential \
+#   cmake \
+#   libgtk-3-dev \
+#   libgl1-mesa-glx
+
+# === WINDOWS FIXES ===
+# 1. Install Visual C++ Redist: https://aka.ms/vs/17/release/vc_redist.x64.exe
+# 2. For webcam issues: Use cv2.CAP_DSHOW flag
+
+# === PERFORMANCE TIPS ===
+# Set these ENV variables:
+# TF_CPP_MIN_LOG_LEVEL=2     # Suppress TensorFlow logs
+# CUDA_VISIBLE_DEVICES=-1    # Disable GPU if causing issues
+
+# === FACE DATABASE SETUP ===
+# 1. Create 'face_database' folder
+# 2. Add images named like 'Person1.jpg', 'Person2.png'
+# 3. Minimum 3 images per person recommended
+
+# === RUN COMMAND ===
+# python emotion_detection.py
